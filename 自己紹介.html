@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>田中大智の自己紹介</title>
+    <style>
+        /* --- ここからデザインを決めるCSS --- */
+        body {
+            font-family: 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
+            background-color: #f0f2f5; /* 背景を少しだけグレーに */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .profile-card {
+            background-color: #ffffff; /* カードの背景は白 */
+            border-radius: 15px; /* カードの角を丸くする */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* カードに影をつけて立体感を出す */
+            padding: 40px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .profile-card h1 {
+            font-size: 2.5em; /* 名前の文字サイズ */
+            color: #333333;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .profile-card ul {
+            list-style: none; /* リストの黒点を消す */
+            padding: 0;
+            text-align: left; /* リストの中身は左揃えに */
+            margin-top: 30px;
+        }
+
+        .profile-card li {
+            font-size: 1.1em;
+            color: #555555;
+            padding: 12px 0;
+            border-bottom: 1px solid #eeeeee; /* 各項目の下に区切り線を入れる */
+        }
+        
+        .profile-card li:last-child {
+            border-bottom: none; /* 最後の項目の線は消す */
+        }
+
+        .profile-card strong {
+            display: inline-block;
+            width: 120px; /* ラベルの幅を揃える */
+            color: #111111;
+            font-weight: bold;
+        }
+        /* --- ここまでCSS --- */
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <!-- ここから自己紹介の内容 -->
+        <h1>田中 大智</h1>
+
+        <ul>
+            <li>
+                <strong>専攻：</strong>
+                <span>電子工学専攻</span>
+            </li>
+            <li>
+                <strong>研究内容：</strong>
+                <span>メタサーフェス</span>
+            </li>
+            <li>
+                <strong>趣味：</strong>
+                <span>音楽を聴く事</span>
+            </li>
+        </ul>
+        <!-- ここまで自己紹介の内容 -->
+    </div>
+
+</body>
+</html>
