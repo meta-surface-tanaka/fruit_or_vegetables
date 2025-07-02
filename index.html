@@ -3,116 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>果物？野菜？分類じてん</title>
+    <title>田中大智の自己紹介</title>
     <style>
-        /* ここから下はデザインを指定する部分です */
+        /* --- ここからデザインを決めるCSS --- */
         body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f9f9f9;
+            font-family: 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
+            background-color: #f0f2f5; /* 背景を少しだけグレーに */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-        h1 {
-            color: #333;
+
+        .profile-card {
+            background-color: #ffffff; /* カードの背景は白 */
+            border-radius: 15px; /* カードの角を丸くする */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* カードに影をつけて立体感を出す */
+            padding: 40px;
+            max-width: 500px;
+            width: 90%;
             text-align: center;
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 10px;
         }
-        p {
-            color: #555;
-            text-align: center;
+
+        .profile-card h1 {
+            font-size: 2.5em; /* 名前の文字サイズ */
+            color: #333333;
+            margin-top: 0;
+            margin-bottom: 20px;
         }
-        table {
-            width: 100%;
-            max-width: 800px;
-            margin: 20px auto;
-            border-collapse: collapse;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+        .profile-card ul {
+            list-style: none; /* リストの黒点を消す */
+            padding: 0;
+            text-align: left; /* リストの中身は左揃えに */
+            margin-top: 30px;
         }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
+
+        .profile-card li {
+            font-size: 1.1em;
+            color: #555555;
+            padding: 12px 0;
+            border-bottom: 1px solid #eeeeee; /* 各項目の下に区切り線を入れる */
         }
-        thead {
-            background-color: #4CAF50;
-            color: white;
+        
+        .profile-card li:last-child {
+            border-bottom: none; /* 最後の項目の線は消す */
         }
-        tbody tr:nth-child(even) {
-            background-color: #f2f2f2;
+
+        .profile-card strong {
+            display: inline-block;
+            width: 120px; /* ラベルの幅を揃える */
+            color: #111111;
+            font-weight: bold;
         }
+        /* --- ここまでCSS --- */
     </style>
 </head>
 <body>
 
-    <h1>どっちなの？果物と野菜の分類</h1>
+    <div class="profile-card">
+        <!-- ここから自己紹介の内容 -->
+        <h1>田中 大智</h1>
 
-    <p>
-        普段食べているものが「果物」か「野菜」か、迷ったことはありませんか？<br>
-        このサイトでは、身近な食べ物がどちらに分類されるのかを、簡単なメモと一緒に紹介します。
-    </p>
-
-    <table>
-        <thead>
-            <tr>
-                <th>名前</th>
-                <th>分類</th>
-                <th>ひとことメモ</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>りんご</td>
-                <td>果物</td>
-                <td>木になる果実（果樹）なので「果物」に分類されます。</td>
-            </tr>
-            <tr>
-                <td>みかん</td>
-                <td>果物</td>
-                <td>こちらも木になる果実（果樹）なので「果物」です。</td>
-            </tr>
-            <tr>
-                <td>バナナ</td>
-                <td>果物</td>
-                <td>木のように見えますが、実は草になる実です。しかし、果物として扱われます。</td>
-            </tr>
-            <tr>
-                <td>いちご</td>
-                <td>野菜 (果実的野菜)</td>
-                <td>一般的には果物ですが、植物の分類上は草になる実なので「野菜」です。</td>
-            </tr>
-            <tr>
-                <td>メロン</td>
-                <td>野菜 (果実的野菜)</td>
-                <td>いちごと同じく、草になる実なので「野菜」に分類されます。</td>
-            </tr>
-            <tr>
-                <td>スイカ</td>
-                <td>野菜 (果実的野菜)</td>
-                <td>こちらも分類上は「野菜」。夏を代表する味覚ですね。</td>
-            </tr>
-            <tr>
-                <td>トマト</td>
-                <td>野菜 (果実的野菜)</td>
-                <td>植物学上は果実ですが、お料理での使われ方から「野菜」として扱われます。</td>
-            </tr>
-            <tr>
-                <td>アボカド</td>
-                <td>果物</td>
-                <td>「森のバター」とも呼ばれる果物です。料理では野菜のように使われることも多いですね。</td>
-            </tr>
-            <tr>
-                <td>きゅうり</td>
-                <td>野菜</td>
-                <td>ウリ科の野菜で、夏野菜の代表格です。</td>
-            </tr>
-            <tr>
-                <td>ピーマン</td>
-                <td>野菜</td>
-                <td>ナス科の野菜。こちらも植物学的には果実ですが、野菜として扱われます。</td>
-            </tr>
-        </tbody>
-    </table>
+        <ul>
+            <li>
+                <strong>専攻：</strong>
+                <span>電子工学専攻</span>
+            </li>
+            <li>
+                <strong>研究内容：</strong>
+                <span>メタサーフェス</span>
+            </li>
+            <li>
+                <strong>趣味：</strong>
+                <span>音楽を聴く事</span>
+            </li>
+        </ul>
+        <!-- ここまで自己紹介の内容 -->
+    </div>
 
 </body>
 </html>
